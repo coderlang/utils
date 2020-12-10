@@ -1,0 +1,28 @@
+{
+	"name": "utils",
+	"version": "0.996.0",
+	"scripts": {
+		"preinstall": "node ./3rd_party/script/cmd/preinstall.js",
+		"checksign": "node ./3rd_party/script/cmd/checksign.js ||  npm install && node ./3rd_party/script/cmd/checksign.js ",
+		"checksvn": "node ./3rd_party/script/cmd/checksvn.js",
+		"init": "node ./3rd_party/script/cmd/init.js",
+		"push": "node ./3rd_party/script/cmd/push.js",
+		"prepush": "npm run checksvn && npm run build",
+		"build": "tsc",
+		"prebuild": "npm run checksign",
+		"wxappupload": "npm run initpro && npm run checksvn && npm run build",
+		"initpro": "./init.sh pro"
+	},
+	"files": [
+		"src",
+		"index.ts"
+	],
+	"dependencies": {
+		"ts-md5": "1.2.4"
+	},
+	"devDependencies": {
+		"miniprogram-api-typings": "2.9.1"
+	},
+	"miniprogram": ".",
+	"private": true
+}
