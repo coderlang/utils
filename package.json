@@ -20,9 +20,7 @@
 	"dependencies": {
 		"ts-md5": "1.2.4"
 	},
-	"devDependencies": {
-		"miniprogram-api-typings": "2.9.1"
-	},
+	"devDependencies": {},
 	"miniprogram": ".",
 	"private": true
 }
