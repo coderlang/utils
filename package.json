@@ -4,14 +4,11 @@
 	"scripts": {
 		"preinstall": "node ./3rd_party/script/cmd/preinstall.js",
 		"checksign": "node ./3rd_party/script/cmd/checksign.js ||  npm install && node ./3rd_party/script/cmd/checksign.js ",
-		"checksvn": "node ./3rd_party/script/cmd/checksvn.js",
 		"init": "node ./3rd_party/script/cmd/init.js",
 		"push": "node ./3rd_party/script/cmd/push.js",
-		"prepush": "npm run checksvn && npm run build",
+		"prepush": "npm run build",
 		"build": "tsc",
-		"prebuild": "npm run checksign",
-		"wxappupload": "npm run initpro && npm run checksvn && npm run build",
-		"initpro": "./init.sh pro"
+		"prebuild": "npm run checksign"
 	},
 	"files": [
 		"src",
