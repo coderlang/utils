@@ -2,7 +2,6 @@
 	"name": "utils",
 	"version": "0.996.0",
 	"scripts": {
-		"preinstall": "node ./3rd_party/script/cmd/preinstall.js",
 		"checksign": "node ./3rd_party/script/cmd/checksign.js ||  npm install && node ./3rd_party/script/cmd/checksign.js ",
 		"init": "node ./3rd_party/script/cmd/init.js",
 		"push": "node ./3rd_party/script/cmd/push.js",
