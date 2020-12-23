@@ -1,3 +1,2 @@
-git submodule init
-git submodule update
-git checkout master
+./3rd_party/script/update.submodule.sh
+node ./3rd_party/script/cmd/init.js
