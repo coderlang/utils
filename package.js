@@ -1,7 +1,3 @@
-
-let {core} = require("./3rd_party/script/core.js");
-let {ThirdParty, LocalParty} = require("./3rd_party/script/config.js");
-
 module.exports = {
   name: "utils",
   version: '0.996.0',
@@ -9,7 +5,6 @@ module.exports = {
   ],
   files: ["src", "index.ts"],
   dependencies: [
-    ThirdParty.tsmd5,
   ],
   devDependencies: [
   ],

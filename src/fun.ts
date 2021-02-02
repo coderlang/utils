@@ -1,18 +1,8 @@
-import {Duration, Millisecond} from "./duration";
-
 export function random(min: number, max: number): number {
   min = Math.ceil(min);
   max = Math.floor(max);
   //The maximum is exclusive and the minimum is inclusive
   return Math.floor(Math.random() * (max - min)) + min;
-}
-
-export async function sleep(d: Duration): Promise<void> {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve()
-    }, d / Millisecond)
-  })
 }
 
 export function getProperty<T, K extends keyof T>(o: T, name: K): T[K] {
