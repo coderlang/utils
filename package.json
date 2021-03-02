@@ -16,7 +16,9 @@
 		"src",
 		"index.ts"
 	],
-	"dependencies": {},
+	"dependencies": {
+		"ts-md5": "1.2.4"
+	},
 	"devDependencies": {},
 	"miniprogram": ".",
 	"private": true

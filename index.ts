@@ -5,3 +5,4 @@ export * from "./src/duration"
 export {Class} from "./src/Class";
 export {DefaultConstructor} from "./src/DefaultConstructor";
 export * from "./src/Async";
+export * from "./src/Sign";
